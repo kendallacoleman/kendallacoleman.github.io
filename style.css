@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;800;900&display=swap');
 
 @font-face {
-    font-family: 'Mouldy Cheese';
-    src: url('/fonts/Mouldy-Cheese.ttf') format('truetype');
+    font-family: 'PoetsenOne-Regular';
+    src: url('/fonts/PoetsenOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,7 +80,7 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
+    font-family: 'Howdy Lemon';
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     background-color: var(--first-color-lighten);
@@ -93,6 +93,10 @@ h2,
 h3,
 p {
     margin: 0;
+}
+
+p {
+    font-family: 'PoetsenOne-Regular';
 }
 
 h3 {
@@ -206,7 +210,7 @@ img {
 }
 
 .nav__link:hover {
-    color: var(--first-color-light-dark);
+    color: white;
 }
 
 .nav__toggle {
@@ -222,7 +226,7 @@ img {
 
 /* ----------------------- Active menu ----------------- */
 .active {
-    color: var(--first-color-light-dark);
+    color: white;
 }
 
 /* ----------------------- Home ------------------------------ */
@@ -346,6 +350,7 @@ img {
 }
 
 .about__information-data {
+    font-family: 'PoetsenOne-Regular';
     display: flex;
     align-items: center;
     padding-left: 1.5rem;
@@ -576,6 +581,8 @@ img {
 .works__img {
     position: relative;
     overflow: hidden;
+    height: 12.5rem;
+    width: 12.5rem;
     border-radius: .5rem;
 }
 
@@ -588,7 +595,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #3741fa81;
+    text-align: center;
+    background: rgba(146, 173, 164, 0.9);
     border-radius: .5rem;
     transition: .3s;
 }
@@ -605,7 +613,7 @@ img {
 
 .works__title {
     font-size: var(--h2-font-size);
-    color: var(--first-color-lighten);
+    color: #f8ebda;
 }
 
 .works__img:hover .works__data {
@@ -630,7 +638,8 @@ img {
 
 .contact::placeholder {
     color: var(--first-color-dark);
-    font-family: var(--body-font);
+    font-family: 'PoetsenOne-Regular';
+    ;
     font-weight: var(--font-medium);
 }
 
