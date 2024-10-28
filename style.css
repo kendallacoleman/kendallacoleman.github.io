@@ -1,6 +1,4 @@
 /* ----------------------- Google Fonts -------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;800;900&display=swap');
-
 @font-face {
     font-family: 'PoetsenOne-Regular';
     src: url('/fonts/PoetsenOne-Regular.ttf') format('truetype');
@@ -248,7 +246,7 @@ img {
     padding-left: .8rem;
     width: 260px;
     height: 260px;
-    background-color: #92ada4;
+    background-color: #499995;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: var(--mb-2);
@@ -496,7 +494,9 @@ img {
 
 /* ------------------------------------ Services ------------------------------- */
 .services__container {
-    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .services__content {
@@ -521,9 +521,20 @@ img {
     margin-bottom: var(--mb-1);
 }
 
+.services__subtitle {
+    font-size: 1rem;
+    color: var(--first-color-dark);
+    margin-top: -0.5rem;
+}
+
+.services__description {
+    margin-top: -0.5rem;
+}
+
 .services__content,
 .services__icon,
 .services__title,
+.services__subtitle,
 .services__description {
     transition: .5s;
 }
@@ -538,6 +549,10 @@ img {
 }
 
 .services__content:hover .services__title {
+    color: var(--first-color-lighten);
+}
+
+.services__content:hover .services__subtitle {
     color: var(--first-color-lighten);
 }
 
@@ -634,6 +649,10 @@ img {
     row-gap: 3rem;
 }
 
+.contact__container .bd-grid {
+    align-content: center;
+}
+
 .contact__input {
     width: 100%;
     padding: 1rem;
@@ -717,6 +736,23 @@ img {
 }
 
 /* ------------------------- Media Queries for tablet screen ---------------------------- */
+@media screen and (min-width: 480px) {
+
+    .about__container,
+    .skills__container,
+    .services__container,
+    .works__container,
+    .contact__container,
+    .contact__inputs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
 @media screen and (min-width: 786px) {
     .home__button {
         width: initial;
