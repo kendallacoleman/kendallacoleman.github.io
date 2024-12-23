@@ -218,11 +218,11 @@ img {
 /* ------------------------- Media Queries for phone screen ---------------------------- */
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 0.25rem;
+        font-size: 1rem;
     }
 }
 
