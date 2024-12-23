@@ -195,7 +195,7 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 100%;
+    width: var(--nav-width);
     height: 100vh;
     padding: 2rem;
     display: flex;
