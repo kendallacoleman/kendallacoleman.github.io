@@ -715,6 +715,18 @@ img {
 /* ------------------------- Media Queries for tablet screen ---------------------------- */
 @media screen and (min-width: 480px) {
 
+    .bd-contact {
+        max-width: 1024px;
+        grid-template-columns: 100%;
+        column-gap: 2rem;
+        width: calc(100% - 2rem);
+        margin-left: 3rem;
+    }
+
+    .bd-work {
+        margin: auto;
+    }
+
     .about__container,
     .experience__container,
     .skills__container,
@@ -725,89 +737,62 @@ img {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
     p {
         font-size: 1rem;
     }
 
-}
-
-@media screen and (min-width: 786px) {
-    .home__button {
-        width: initial;
+    .section-title {
+        font-size: 2rem;
     }
 
-    .nav__menu {
-        width: var(--nav-width);
+    .about__information-title {
+        font-size: 1.25rem;
+        text-align: center;
     }
 
-    .about__container,
-    .experience__container,
-    .skills__container,
-    .services__container,
-    .works__container,
-    .contact__container,
-    .contact__inputs {
-        grid-template-columns: repeat(2, 1fr);
+    .about__text,
+    .about__information-icon {
+        margin-left: 3.25rem;
     }
 
-    .about__img {
-        width: 160px;
+    .skills__subtitle {
+        font-size: 1.25rem;
     }
 
-    .about__data {
-        text-align: initial;
+    .skills__content {
+        text-align: center;
     }
 
-    .about__information {
-        padding-left: 4rem;
+    .experience__subtitle {
+        text-align: center;
     }
 
-    .education__time {
-        padding: 0 2rem;
+    .experience__text {
+        text-align: center;
     }
 
-    .project {
-        background: none;
+    .works__title {
+        font-size: 1.5rem;
     }
 
-    .project__container {
-        background-color: var(--first-color);
-        grid-template-columns: 2fr 1.2fr;
-        padding: 0 2rem;
-        border-radius: .5rem;
+    .contact__input {
+        margin-left: -2rem;
     }
 
-    .project__data {
-        padding: 1rem 0;
+    .contact__container label {
+        font-size: 1.5rem;
     }
 
-    .project__title,
-    .project__data {
-        text-align: initial;
-    }
-
-    .project__img {
-        width: 230px;
-        align-self: flex-end;
-    }
-
-    .contact__inputs {
-        display: grid;
-        column-gap: 1.5rem;
-    }
-
-    .contact__info {
-        padding-left: 3rem;
-    }
-
-    .footer {
-        background: none;
-    }
-
-    .footer__container {
-        background-color: var(--first-color-darken);
-        padding: 3rem 0;
-        border-radius: .5rem;
+    .contact__input {
+        font-size: 1.25rem;
     }
 }
 
