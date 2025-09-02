@@ -15,12 +15,8 @@
 
 <body>
     <!------------------------ Header starts from here ----------------------->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-
+    <header class="header">
+        <nav class="nav">
             <div>
                 <a href="#" class="nav__logo">Kendall Coleman</a>
             </div>
@@ -32,13 +28,16 @@
 
                 <ul class="nav__list">
                     <li class="nav__item"> <a href="#home" class="nav__link active"> Home </a></li>
-                    <li class="nav__item"> <a href="#about" class="nav__link"> About </a></li>
-                    <li class="nav__item"> <a href="#experience" class="nav__link"> Work Experience </a></li>
+                    <li class="nav__item"> <a href="#education" class="nav__link"> Education </a></li>
+                    <li class="nav__item"> <a href="#experience" class="nav__link"> Experience </a></li>
                     <li class="nav__item"> <a href="#skills" class="nav__link"> Skills </a></li>
-                    <li class="nav__item"> <a href="#works" class="nav__link"> Works </a></li>
                     <li class="nav__item"> <a href="#involvements" class="nav__link"> Involvements </a></li>
-                    <li class="nav__item"> <a href="#contact" class="nav__link"> Contact </a></li>
+                    <!-- <li class="nav__item"> <a href="#gallery" class="nav__link"> Gallery </a></li> -->
                 </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
@@ -48,87 +47,144 @@
     <main class="l-main">
         <!------------------- Home ------------------->
         <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <div class="home__data">
-                    <div class="home__img">
-                        <img src="img/Kendall-Coleman-Headshot.png" alt="Kendall Coleman" title="Kendall Coleman">
+            <div class="home-container">
+                <img class="home-img" src="/img/Kendall-Coleman-Headshot.jpeg" alt="Kendall Coleman Headshot">
+                <div class="home-body">
+                    <h1 class="home-title">Kendall Coleman</h1>
+                    <span class="home-profession">Computer Science Student</span>
+                    <div class="home-social">
+                        <a download="" href="files/Coleman_Kendall_2024 - Google Docs.pdf" class="button home-button" target="_blank">Download My Resume!</a>
+                        <a href="https://www.linkedin.com/in/kendallacoleman/" class="home-social-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/kendallacoleman" class="home-social-link" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
+                    
 
-                    <h1 class="home__title">Kendall Coleman</h1>
-                    <span class="home__profession">Computer Science Student</span>
+                    <h1 class="section-title">About Me</h1>
 
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/kendallacoleman/" class="home__social-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/kendallacoleman" class="home__social-link" target="_blank"><i class='bx bxl-github'></i></a>
+                    <div class="about-data">
+                        <p class="about-description">
+                            Hi, I'm Kendall!  I am a senior computer science student at James Madison University!  
+                            I am interested in software development and digital marketing.  When I'm not behind a laptop, 
+                            I enjoy reading, baking, and cheering on the JMU football and basketball teams!  A fun fact about me is that
+                            I was in the JMU Pep Band when JMU went to March Madness in 2024!
+                        </p>
                     </div>
-
-                    <a download="" href="files/Coleman_Kendall_2024 - Google Docs.pdf" class="button home__button" target="_blank">Download My Resume!</a>
                 </div>
-            </div>
+            </div> 
         </section>
 
-        <!-------------------------- About ---------------------------->
-        <section class="about section" id="about">
+        <!-------------------------- Education ---------------------------->
+        <section class="education section" id="education">
+            <div class="education-container">
+                <div class="education-body">
+                    
 
-            <h2 class="section-title">About Me</h2>
+                    <h1 class="section-title">Education</h1>
 
-            <div class="about__container bd-grid">
-                <div class="about__data">
-                    <p class="about__description">
-                        I am a current Junior at James Madison University. I am majoring in Computer Science,
-                        and minoring in Computational Analytics. My expected graduation date is December 2025.
-                        At JMU, I serve as a Computer Science Ambassador. In this role, I help potential students
-                        learn more about the Computer Science program, and help run the JMU CS Instagram page.
-                    </p>
-                </div>
-
-                <div>
-                    <div class="about__information">
-                        <h3 class="about__information-title">My Information</h3>
-
-                        <div class="about__information-data">
-                            <i class='bx bxs-user about__information-icon'></i>
-                            <p class="about__text">Kendall Coleman</p>
-                        </div>
-
-                        <div class="about__information-data">
-                            <i class='bx bxs-envelope about__information-icon'></i>
-                            <p class="about__text">colem7ka@dukes.jmu.edu</p>
-                        </div>
+                    <div class="education-data">
+                        <h2>James Madison University</h2>
+                        <h3>August 2022 - December 2025 (Projected)</h3>
+                        <p class="education-description">
+                            I am expected to graduate from James Madison University in December 2025 with a Bachelor of Science
+                            in Computer Science.  During my time at JMU, I have also completed a minor in Computational Analytics.  
+                            This minor has deepened my understanding of optimalization techniques from a mathematical perspective.
+                        </p>
+                        <h3>Relevant Coursework</h3>
+                        <p>
+                            Calc II, Linear Algebra, Applied Algorithms, Web Development, Software Engineering, Numerical Analysis
+                        </p>
                     </div>
                 </div>
-            </div>
+                <img class="education-img" src="/img/jmu.jpeg" alt="Picture of James Madison University">
+            </div> 
         </section>
         <!--------------------------------- Work Experience ------------------------------->
-        <section class="work experience" id="experience">
-            <h2 class="section-title">Work Experience</h2>
-
-            <div class="experience__container bd-work">
-                <div class="experience__content">
-                    <h3 class="experience__subtitle">JMU Computer Science Ambassador | Harrisonburg, Virginia | August 2024 - Present</h3>
-                    <p class="experience__text">As an Ambassador for JMU's Department of Computer Science, I give tours for prospective students and their families,
+        <section class="work-experience" id="experience">
+            <h2 class="section-title" id="experience">Work Experience</h2>
+            <div class="experience-container">
+                <div class="experience-content">
+                    <div class="experience-subtitle">
+                        <h2>JMU Computer Science Ambassador</h2>
+                        <h3>Harrisonburg, Virginia | August 2024 - Present</h3>   
+                    </div>
+                    <p class="experience-text">As an Ambassador for JMU's Department of Computer Science, I give tours for prospective students and their families,
                         effectively showcasing our program and enhancing my interpersonal skills. I have gained valuable experience representing
                         the department at various university events. I manage the department's Instagram account, creating engaging posts that
                         promote events and foster a vibrant student community, which allows me to connect with students and alumni. Additionally,
                         I create resources for current and prospective students, support current students through advising events, and participate
-                        in community-building activities. I am dedicated to ensuring the overall success of our department.</p>
+                        in community-building activities. I am dedicated to ensuring the overall success of our department. Over the past year,
+                        the Instagram has gained <b>over 250K views</b>.</p>
                 </div>
 
-                <div class="experience__content">
-                    <h3 class="experience__subtitle">Tidepool Toys and Games | Bethany Beach, Delaware | April 2019 - Present</h3>
-                    <p class="experience__text">As a Sales Clerk, I deliver exceptional service while efficiently managing various tasks. I assist customers
+                <div class="experience-content">
+                    <div class="experience-subtitle">
+                        <h2>Tidepool Toys and Games</h2>
+                        <h3>Bethany Beach, Delaware | April 2019 - Present</h3>
+                    </div>
+                    <p class="experience-text">As a Sales Clerk, I deliver exceptional service while efficiently managing various tasks. I assist customers
                         during transactions to ensure a positive shopping experience and handle purchases and payments with meticulous
                         attention to detail. Additionally, I organize inventory to keep the sales floor well-presented and balance multiple
                         responsibilities during peak hours, enhancing overall service efficiency. Collaborating with team members, I
                         contribute to a positive work environment, which has helped refine my communication skills and develop a proactive
                         approach to customer service in a fast-paced setting.</p>
                 </div>
+
+                <div class="experience-content">
+                    <h2 class="section-title" id="experience">Project Experience</h2>
+                    <div class="experience-subtitle">
+                        <h2>Programming Languages Spreadsheet Project</h2>
+                        <h3>January 2025 - May 2025</h3>   
+                    </div>
+                    <ul class="project-description-list">
+                        <li>Designed and implemented a spreadsheet application in Ruby that featured a custom lexer, parser, and expression evaluator to process formulas.</li>
+                        <li>Built a Curses-based terminal user interface (TUI) with grid navigation, formula editing, and real-time value updates.</li>
+                        <li>Added support for statistical funtions, variables, conditionals, and for-each loops, ensuring correct dependency tracking and cycle detection between cells.</li>
+                        <li>Applied compiler design concepts (AST traversal, dependency analysis, runtime evaluation) to enable robust formula evaluation.</li>
+                    </ul>
+                    <p>Overall, this project strengthened my understanding of language implementation, data structures, and user interface desgin through a full-stack systems project.</p>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-subtitle">
+                        <h2>Personal Portfolio</h2>
+                        <h3>September 2024 - December 2024</h3>   
+                    </div>
+                    <ul class="project-description-list">
+                        <li>Created a personal portfolio displaying my work experience, skills, and personal involvements to promote myself in a professional way.</li>
+                        <li>Using my skills in HTML and CSS, I designed and implemented my portfolio to make it accessible for all users.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-subtitle">
+                        <h2>Application Development Project</h2>
+                        <h3>January 2024 - May 2024</h3>   
+                    </div>
+                    <ul class="project-description-list">
+                        <li>Created a user-friendly and visually appealing website for an imaginary restaurant using Javascript, HTML, and CSS, demonstrating my skills in front-end development.</li>
+                        <li>Designed and implemented an online ordering system and integrated location-based services using the Google Maps API to enhance user experience.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-subtitle">
+                        <h2>Software Engineering Project</h2>
+                        <h3>October 2023 - December 2023</h3>   
+                    </div>
+                    <ul class="project-description-list">
+                        <li>Enhanced my technical skills in JavaScript, HTML and CSS by developing a movie review system that used The Movie Database API for fetching and displaying movie data.</li>
+                        <li>Applied the Agile Methodology to manage project milestones and deliverables effectively.</li>
+                        <li>Created an interactive movie review system, allowing users to submit reviews, demonstrating my ability to develop interactive and dynamic web components.</li>
+                    </ul>
+                </div>
+
             </div>
 
+            
         </section>
 
         <!--------------------------------- Skills ------------------------------->
-        <section class="skills section" id="skills">
+        <!-- <section class="skills section" id="skills">
             <h2 class="section-title">My Skills</h2>
 
             <div class="skills__container bd-grid">
@@ -142,132 +198,94 @@
                     <p>UI/UX Design, AGILE</p>
                 </div>
             </div>
-        </section>
-
-        <!---------------------------------- Works --------------------------->
-        <section class="works section" id="works">
-            <!-- <span class="section-subtitle">My portfolio</span> -->
-            <h2 class="section-title">Recent Works</h2>
-
-            <div class="works__container bd-grid">
-                <div class="works__img">
-                    <img src="img/saferides.png" alt="Saferides Project" title="Saferides Project">
-
-                    <div class="works__data">
-                        <a href="saferides.html" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Saferides Project</span>
-                    </div>
-                </div>
-
-                <div class="works__img">
-                    <img src="img/cafe.png" alt="Cafe Web App" title="Cafe Web App">
-
-                    <div class="works__data">
-                        <a href="cafe.html" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Cafe Web App</span>
-                    </div>
-                </div>
-
-                <div class="works__img">
-                    <img src="img/jmuvie.png" alt="JM'Uvies Website" title="JM'Uvies Website">
-
-                    <div class="works__data">
-                        <a href="jmuvies.html" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">JM'Uvies Website</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
 
         <!------------------------------- Involvements ------------------------------>
-        <section class="services section" id="involvements">
+        <!-- <section class="involvements section" id="involvements">
             <h2 class="section-title">My Involvements</h2>
 
-            <div class="services__container bd-grid">
-                <div class="services__content">
+            <div class="involvements__container bd-grid">
+                <div class="involvements__content">
                     <i class="bx bx-store-alt service__icon"></i>
-                    <h3 class="services__title">Atlantic Community Thrift Store Volunteer</h3>
-                    <h4 class="services__subtitle">September 2021 - Present</h4>
-                    <p class="services__description">As a volunteer, I have the opportunity to make a difference in my community! I have over 250 hours of service at ACTS! Every shift is a chance to support and contribute to my community and help those in need!</p>
+                    <h3 class="involvements__title">Atlantic Community Thrift Store Volunteer</h3>
+                    <h4 class="involvements__subtitle">September 2021 - Present</h4>
+                    <p class="involvements__description">As a volunteer, I have the opportunity to make a difference in my community! I have over 250 hours of service at ACTS! Every shift is a chance to support and contribute to my community and help those in need!</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-music service__icon"></i>
-                    <h3 class="services__title">JMU Marching Royal Dukes</h3>
-                    <h4 class="services__subtitle">August 2022 - December 2023</h4>
-                    <p class="services__description">As a member of the JMU Marching Royal Dukes, I represented JMU with pride during performances. I also had the amazing opportunity to travel to JMU's first bowl game in Fort Worth in 2023!</p>
+                    <h3 class="involvements__title">JMU Marching Royal Dukes</h3>
+                    <h4 class="involvements__subtitle">August 2022 - December 2023</h4>
+                    <p class="involvements__description">As a member of the JMU Marching Royal Dukes, I represented JMU with pride during performances. I also had the amazing opportunity to travel to JMU's first bowl game in Fort Worth in 2023!</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-camera service__icon"></i>
-                    <h3 class="services__title">JMU Marching Royal Dukes Media Team</h3>
-                    <h4 class="services__subtitle">August 2023 - December 2023</h4>
-                    <p class="services__description">As a member of the JMU Marching Royal Dukes Media Team, I played a vital role in capturing and sharing the spirit of the MRDs. I worked to create engaging content, like member spotlights, for the JMUMRD Instagram.</p>
+                    <h3 class="involvements__title">JMU Marching Royal Dukes Media Team</h3>
+                    <h4 class="involvements__subtitle">August 2023 - December 2023</h4>
+                    <p class="involvements__description">As a member of the JMU Marching Royal Dukes Media Team, I played a vital role in capturing and sharing the spirit of the MRDs. I worked to create engaging content, like member spotlights, for the JMUMRD Instagram.</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-music service__icon"></i>
-                    <h3 class="services__title">JMU Pep Band</h3>
-                    <h4 class="services__subtitle">January 2023 - Present</h4>
-                    <p class="services__description">As a member of the JMU Pep Band, I represent JMU with pride and support the men's and women's basketball teams at all home games. I have also had the amazing opportunities to travel to the Sun Belt Conference Championship in 2024, and Men's March Madness in 2024!</p>
+                    <h3 class="involvements__title">JMU Pep Band</h3>
+                    <h4 class="involvements__subtitle">January 2023 - Present</h4>
+                    <p class="involvements__description">As a member of the JMU Pep Band, I represent JMU with pride and support the men's and women's basketball teams at all home games. I have also had the amazing opportunities to travel to the Sun Belt Conference Championship in 2024, and Men's March Madness in 2024!</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-camera service__icon"></i>
-                    <h3 class="services__title">JMU Pep Band Media Team</h3>
-                    <h4 class="services__subtitle">October 2023 - March 2024</h4>
-                    <p class="services__description">As a member of the JMU Pep Band Media Team, I captured aspecial moments during basketball games. I worked to create engaging content via Instagram takeovers during games and member spotlights for the JMUPepBand Instagram.</p>
+                    <h3 class="involvements__title">JMU Pep Band Media Team</h3>
+                    <h4 class="involvements__subtitle">October 2023 - March 2024</h4>
+                    <p class="involvements__description">As a member of the JMU Pep Band Media Team, I captured aspecial moments during basketball games. I worked to create engaging content via Instagram takeovers during games and member spotlights for the JMUPepBand Instagram.</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-code service__icon"></i>
-                    <h3 class="services__title">JMU Competitive Programming Club</h3>
-                    <h4 class="services__subtitle">August 2024 - Present</h4>
-                    <p class="services__description">As a member of the JMU Competitive Programming Club, I actively engage in coding challenges and competitions that enhance my problem-solving skills and general programming knowledge. My involvement strengthens my technical abilities and collaboration skills.</p>
+                    <h3 class="involvements__title">JMU Competitive Programming Club</h3>
+                    <h4 class="involvements__subtitle">August 2024 - Present</h4>
+                    <p class="involvements__description">As a member of the JMU Competitive Programming Club, I actively engage in coding challenges and competitions that enhance my problem-solving skills and general programming knowledge. My involvement strengthens my technical abilities and collaboration skills.</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-mobile service__icon"></i>
-                    <h3 class="services__title">DIGITAL Workshop Leader</h3>
-                    <h4 class="services__subtitle">October 2024 - November 2024</h4>
-                    <p class="services__description">DIGITAL (Dukes Inspiring Girls Into Technology Across Limits) is a one-day STEM event hosted by JMU's Women In Technology, open to girls in grades 9-12. As a workshop leader, I helped to create an engaging workshop, allowing girls to make their very own mobile app!</p>
+                    <h3 class="involvements__title">DIGITAL Workshop Leader</h3>
+                    <h4 class="involvements__subtitle">October 2024 - November 2024</h4>
+                    <p class="involvements__description">DIGITAL (Dukes Inspiring Girls Into Technology Across Limits) is a one-day STEM event hosted by JMU's Women In Technology, open to girls in grades 9-12. As a workshop leader, I helped to create an engaging workshop, allowing girls to make their very own mobile app!</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bx-pointer service__icon"></i>
-                    <h3 class="services__title">madiSTEM Social Media Coordinator</h3>
-                    <h4 class="services__subtitle">September 2024 - Present</h4>
-                    <p class="services__description">madiSTEM (Making A Difference In Science, Technology, Engineering, and Mathematics) is a one-day STEM conference held at JMU designed for girls in grades 6-8. As the social media coordinator, I play a crucial role in enhancing madiSTEM's online presence and engaging our audience.</p>
+                    <h3 class="involvements__title">madiSTEM Social Media Coordinator</h3>
+                    <h4 class="involvements__subtitle">September 2024 - Present</h4>
+                    <p class="involvements__description">madiSTEM (Making A Difference In Science, Technology, Engineering, and Mathematics) is a one-day STEM conference held at JMU designed for girls in grades 6-8. As the social media coordinator, I play a crucial role in enhancing madiSTEM's online presence and engaging our audience.</p>
                 </div>
 
-                <div class="services__content">
+                <div class="involvements__content">
                     <i class="bx bxs-graduation service__icon"></i>
-                    <h3 class="services__title">CISE Dean's Student Advisory Council</h3>
-                    <h4 class="services__subtitle">October 2024 - Present</h4>
-                    <p class="services__description">As a member of the CISE Dean's Student Advisory Council, I actively contribute by providing student prospectives on various topics. My involvement allows me to play a key role in shaping the college's future while ensuring that student voices are heard and valued.</p>
+                    <h3 class="involvements__title">CISE Dean's Student Advisory Council</h3>
+                    <h4 class="involvements__subtitle">October 2024 - Present</h4>
+                    <p class="involvements__description">As a member of the CISE Dean's Student Advisory Council, I actively contribute by providing student prospectives on various topics. My involvement allows me to play a key role in shaping the college's future while ensuring that student voices are heard and valued.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!------------------------------- Contact ------------------------------>
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Get In Touch</h2>
+        <!---------------------------------- Photo Gallery --------------------------->
+        <!-- <section class="gallery section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
 
-            <div class="contact__container bd-contact">
-                <form action="https://formcarry.com/s/4esL3xwkYjn" method="POST" class="contact__form">
-                    <div class="contact__inputs">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Name" class="contact__input" name="fullName" required />
-                        <label for="email">Your Email Address</label>
-                        <input type="email" id="email" placeholder="Email" class="contact__input" name="email" required />
+            <div class="gallery__container bd-grid">
+                <div class="gallery__img">
+                    <img src="img/mrd-preview-img.png" alt="Gallery" title="Gallery">
+
+                    <div class="gallery__data">
+                        <a href="gallery.html" class="gallery__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">View Gallery</span>
                     </div>
-
-                    <label for="message">Your Message</label>
-                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" class="contact__input"></textarea>
-                    <button type="submit" class="button contact__button">Send</button>
-                </form>
+                </div>
             </div>
-        </section>
+
+        </section> -->
 
     </main>
     <!------------------------ Body ends from here ----------------------->
