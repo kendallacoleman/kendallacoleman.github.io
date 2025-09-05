@@ -402,11 +402,89 @@ img {
     padding-bottom: 0.5rem;
 }
 
+
 /* -------------------------------------------- Skills ------------------------- */
 
 
 /* ------------------------------------ Involvements ------------------------------- */
 
+
+.involvements-section {
+    margin-top: -1rem;
+}
+
+.involvements__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-left: 8rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+.involvements__content {
+    padding: 1.5rem .5rem;
+    border: 2px solid var(--header-color);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.involvements__icon {
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: var(--background-color);
+    color: var(--header-color);
+    border-radius: 50%;
+    margin-bottom: var(--mb-2);
+}
+
+.involvements__title {
+    font-size: 1.25rem;
+    color: var(--header-color);
+    margin-bottom: var(--mb-1);
+}
+
+.involvements__subtitle {
+    font-size: 1rem;
+    color: var(--header-color);
+    margin-top: -0.5rem;
+}
+
+.involvements__description {
+    margin-top: -0.5rem;
+    color: var(--text-color)
+}
+
+.involvements__content,
+.involvements__icon,
+.involvements__title,
+.involvements__subtitle,
+.involvements__description {
+    transition: .5s;
+}
+
+.involvements__content:hover {
+    background-color: var(--subheader-color);
+}
+
+.involvements__content:hover .involvements__icon {
+    background-color: var(--background-color);
+    color: var(--background-color);
+}
+
+.involvements__content:hover .involvements__title {
+    color: var(--background-color);
+}
+
+.involvements__content:hover .involvements__subtitle {
+    color: var(--background-color);
+}
+
+.involvements__content:hover .involvements__description {
+    color: var(--background-color);
+}
 
 /* ------------------------------ Gallery ----------------------------- */
 
@@ -421,7 +499,7 @@ img {
 
 .footer__title {
     font-size: var(--h1-font-size);
-    /* margin-bottom: var(--mb-2); */
+    margin-bottom: var(--mb-2);
 }
 
 .footer-social {
@@ -602,6 +680,12 @@ img {
     .work-experience {
         padding-top: 1rem;
     }
+
+    .involvements__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    }  
 }
 
 /* ------------------------- Media Queries for phone screen ---------------------------- */
@@ -663,6 +747,10 @@ img {
         margin: 1rem;
     }
        
-    
+    .involvements__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    }  
 
 }
