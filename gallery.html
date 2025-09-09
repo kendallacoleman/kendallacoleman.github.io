@@ -1,44 +1,28 @@
 <!doctype html>
 <title>Example</title>
 <style>
-  body {
+  .cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
   }
-  .home-container {
-    display: flex;
-    align-items: center;
-    background: #F6F3EB;
-    padding: 1rem;
-    border-radius: 3px;
-    width: 1000px;
-    justify-content: center;
-  }
-  .home-img {
-    margin-right: 1em;
-    width: 300px;
-  }
-  .media-body {
-    flex: 1;
-  }
-  .media-heading {
-    margin: 0 0 5rem;
+  .cards img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
   }
 </style>
-<div class="home-container">
-  <img class="home-img" src="/img/Kendall-Coleman-Headshot.jpeg" alt="Sample photo">
-  <div class="home-body">
-        <h1 class="home-title">Kendall Coleman</h1>
-        <span class="home-profession">Computer Science Student</span>
-
-        <div class="home-social">
-            <a href="https://www.linkedin.com/in/kendallacoleman/" class="home__social-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/kendallacoleman" class="home__social-link" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
-
-        <a download="" href="files/Coleman_Kendall_2024 - Google Docs.pdf" class="button home__button" target="_blank">Download My Resume!</a>
-  </div>
-</div>
+<main class="cards">
+  <img src="/pix/samples/23m.jpg" alt="Sample photo">
+  <img src="/pix/samples/24m.jpg" alt="Sample photo">
+  <img src="/pix/samples/22m.jpg" alt="Sample photo">
+  <img src="/pix/samples/28m.jpg" alt="Sample photo">
+  <img src="/pix/samples/29m.jpg" alt="Sample photo">
+  <img src="/pix/samples/30m.jpg" alt="Sample photo">
+  <img src="/pix/samples/27m.jpg" alt="Sample photo">
+  <img src="/pix/samples/32m.jpg" alt="Sample photo">
+  <img src="/pix/samples/33m.jpg" alt="Sample photo">
+</main>

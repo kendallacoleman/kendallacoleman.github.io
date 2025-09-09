@@ -390,10 +390,6 @@ img {
     margin-right: 0 auto;
 }
 
-.experience-text {
-    padding-left: 2rem;
-}
-
 .project-description-list {
     list-style-type: circle;
     font-family: 'Poppins';
@@ -405,6 +401,38 @@ img {
 
 /* -------------------------------------------- Skills ------------------------- */
 
+.skills-container {
+    display: grid;
+}
+
+.skills-subsection {
+    display: contents;
+}
+
+.skills-content {
+    padding: 1.5rem .5rem;
+    border: 2px solid var(--header-color);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.skills-content,
+.skills-title,
+.skills-description {
+    transition: .5s;
+}
+
+.skills-content:hover {
+    background-color: var(--subheader-color);
+}
+
+.skills-content:hover .skills-title {
+    color: var(--background-color);
+}
+
+.skills-content:hover .skills-description {
+    color: var(--background-color);
+}
 
 /* ------------------------------------ Involvements ------------------------------- */
 
@@ -413,25 +441,27 @@ img {
     margin-top: -1rem;
 }
 
-.involvements__container {
+.involvements-container {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.involvements-subsection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-left: 8rem;
-    margin-right: 6rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.involvements__content {
+.involvements-content {
     padding: 1.5rem .5rem;
     border: 2px solid var(--header-color);
     border-radius: .5rem;
     text-align: center;
 }
 
-.involvements__icon {
+.involvements-icon {
     font-size: 2rem;
     padding: .5rem;
     background-color: var(--background-color);
@@ -440,49 +470,49 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.involvements__title {
+.involvements-title {
     font-size: 1.25rem;
     color: var(--header-color);
     margin-bottom: var(--mb-1);
 }
 
-.involvements__subtitle {
+.involvements-subtitle {
     font-size: 1rem;
     color: var(--header-color);
     margin-top: -0.5rem;
 }
 
-.involvements__description {
+.involvements-description {
     margin-top: -0.5rem;
     color: var(--text-color)
 }
 
-.involvements__content,
-.involvements__icon,
-.involvements__title,
-.involvements__subtitle,
-.involvements__description {
+.involvements-content,
+.involvements-icon,
+.involvements-title,
+.involvements-subtitle,
+.involvements-description {
     transition: .5s;
 }
 
-.involvements__content:hover {
+.involvements-content:hover {
     background-color: var(--subheader-color);
 }
 
-.involvements__content:hover .involvements__icon {
+.involvements-content:hover .involvements-icon {
     background-color: var(--background-color);
     color: var(--background-color);
 }
 
-.involvements__content:hover .involvements__title {
+.involvements-content:hover .involvements-title {
     color: var(--background-color);
 }
 
-.involvements__content:hover .involvements__subtitle {
+.involvements-content:hover .involvements-subtitle {
     color: var(--background-color);
 }
 
-.involvements__content:hover .involvements__description {
+.involvements-content:hover .involvements-description {
     color: var(--background-color);
 }
 
@@ -495,11 +525,16 @@ img {
     background-color: var(--nav-color);
     color: var(--first-color-lighten);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
 }
 
 .footer__title {
     font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-2);
 }
 
 .footer-social {
@@ -511,7 +546,7 @@ img {
     background-color: var(--subheader-color);
     color: var(--background-color);
     font-size: 1.1rem;
-    border-radius: 50%;
+    border-radius: .5rem;
     padding: .40rem;
     margin: 0 var(--mb-1);
     transition: .3s;
@@ -596,6 +631,18 @@ img {
         text-transform: capitalize;
     }
 
+    .skills-container {
+        padding-left: 9.5rem;
+        padding-right: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
     .experience-container {
         padding-left: 8.5rem;
         padding-right: 7rem;
@@ -605,12 +652,20 @@ img {
         padding: 1rem;
     }
 
+    .experience-text {
+        padding-left: 2rem;
+    }
+
     .experience-subtitle {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
+    .involvements-container {
+        padding-left: 9.5rem;
+        padding-right: 6rem;
+    }
 }
 
 /* ------------------------- Media Queries for tablet screen ---------------------------- */
@@ -667,6 +722,8 @@ img {
     .experience-container {
         text-align: center;
         padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .experience-text {
@@ -675,17 +732,46 @@ img {
 
     .experience-content {
         text-align: center;
+        padding-bottom: 1.5rem;
     }
 
     .work-experience {
         padding-top: 1rem;
     }
 
-    .involvements__container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    }  
+    .skills-container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .skills-subsection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .involvements-container {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .involvements-subsection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .involvements-subcategory {
+        text-align: center;
+    }
 }
 
 /* ------------------------- Media Queries for phone screen ---------------------------- */
@@ -746,11 +832,35 @@ img {
     .project-description-list {
         margin: 1rem;
     }
+
+    .skills-container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-subsection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
        
-    .involvements__container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    }  
+    .involvements-container {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-align: center;
+    }
+
+    .involvements-subsection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
 
 }
